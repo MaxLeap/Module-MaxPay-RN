@@ -13,10 +13,6 @@ import com.maxleap.MLPayParam;
 import com.maxleap.PayCallback;
 import com.maxleap.QueryOrderCallback;
 import com.maxleap.exception.MLException;
-import com.maxleap.utils.MLUtils;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.util.HashMap;
 import java.util.List;
@@ -107,7 +103,7 @@ public class MLPayNativeModule extends ReactContextBaseJavaModule {
                 if (e != null) {
                     promise.reject("" + e.getCode(), e.getMessage());
                 } else {
-                    promise.resolve(MLOrder.toJSONArray(list));
+                    promise.resolve("" + MLOrder.toJSONArray(list));
                 }
             }
         });
@@ -115,12 +111,11 @@ public class MLPayNativeModule extends ReactContextBaseJavaModule {
 
     private MLPayParam.Channel mapChannel(String ch) {
         if (ch == null) return null;
-        MLIapTransaction.PaySource paySource = MLIapTransaction.PaySource.valueOf(ch);
-        if (paySource == MLIapTransaction.PaySource.ALIPAY_APP) {
+        if (MLIapTransaction.PaySource.ALIPAY_APP.get().equalsIgnoreCase(ch)) {
             return MLPayParam.Channel.ALIPAY_APP;
-        } else if (paySource == MLIapTransaction.PaySource.UNIPAY_APP) {
+        } else if (MLIapTransaction.PaySource.UNIPAY_APP.get().equalsIgnoreCase(ch)) {
             return MLPayParam.Channel.UNION_APP;
-        } else if (paySource == MLIapTransaction.PaySource.WECHAT_APP) {
+        } else if (MLIapTransaction.PaySource.WECHAT_APP.get().equalsIgnoreCase(ch)) {
             return MLPayParam.Channel.WECHAT_APP;
         }
         return MLPayParam.Channel.AUTOMATIC;

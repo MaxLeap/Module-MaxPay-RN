@@ -17,9 +17,6 @@ public class MainActivity extends ReactActivity {
     private String APP_ID = "564d6a6153e70e00012cf262";
     private String API_KEY = "UnBxUVJScDBFQ3FBZG4zaHlPenZ3UQ";
 
-    // private String APP_ID = "56a04b91a5ff7f0001c46a11";
-    // private String API_KEY = "LXJlT2daS0tNZWxMWUFUTnh4MlBCZw";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         TestUtils.debug();

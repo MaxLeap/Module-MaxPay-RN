@@ -95,7 +95,7 @@ public class MLPayNativeModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void findOrder(ReadableMap map, final Promise promise) {
+    public void findRecords(ReadableMap map, final Promise promise) {
         String billNo = map.getString("billNo");
         MLPayManager.queryOrderInBackground(billNo, new QueryOrderCallback() {
             @Override

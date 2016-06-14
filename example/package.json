@@ -10,8 +10,8 @@
     "react": "^0.14.8",
     "react-native": "^0.23.0",
     "underscore": "^1.8.3",
-    "maxleap-react-native": "^0.0.4",
-    "maxleap-helpcenter-react-native": "file:../"
+    "maxleap-react-native": "^0.0.12",
+    "maxpay-react-native": "file:../"
   },
   "devDependencies": {
     "babel-cli": "^6.7.5",

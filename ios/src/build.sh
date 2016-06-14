@@ -7,9 +7,9 @@ outputPath="../lib/"
 outputPath=`cd "${outputPath}";pwd`
 
 scriptPath="./universal-framework"
-projectName="RCTMLHelpCenter.xcodeproj"
+projectName="RCTMaxLeapPay.xcodeproj"
 
-buildCommand='sh '$scriptPath' -project '${projectName}' -scheme RCTMLHelpCenter -productName RCTMLHelpCenter -output '"${outputPath}"
+buildCommand='sh '$scriptPath' -project '${projectName}' -scheme RCTMaxLeapPay -productName RCTMaxLeapPay -output '"${outputPath}"
 $buildCommand
 #
 # open "${outputPath}"

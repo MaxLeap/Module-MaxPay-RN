@@ -1,5 +1,5 @@
 {
-  "name": "maxleap-pay-react-native",
+  "name": "maxpay-react-native",
   "version": "0.0.1",
   "scripts": {
     "start": "node_modules/react-native/packager/packager.sh"
@@ -8,7 +8,7 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-exec": "^2.1.2",
-    "maxleap-react-native": "^0.0.4",
+    "maxleap-react-native": "^0.0.12",
     "react": "^0.14.8",
     "react-native": "^0.23.1"
   },
@@ -22,19 +22,25 @@
   },
   "keywords": [
     "MaxLeap",
-    "HelpCenter",
+    "Pay",
+    "WeiXin",
+    "Wechat",
+    "Alipay",
+    "UnionPay",
+    "Union",
+    "UPPaymentControl",
     "Support",
     "ReactNative",
     "JavaScript",
     "Android",
     "iOS"
   ],
-  "author": "sidneyxu",
-  "license": "MIT",
+  "author": "MaxLeap",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MaxLeap/SDK-ReactNative/issues"
+    "url": "https://github.com/MaxLeap/Module-MaxPay-RN/issues"
   },
-  "homepage": "https://github.com/MaxLeap/SDK-ReactNative#readme",
+  "homepage": "https://github.com/MaxLeap/Module-MaxPay-RN",
   "jshintConfig": {
     "esversion": 6
   }

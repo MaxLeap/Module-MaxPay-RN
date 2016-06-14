@@ -1,0 +1,6 @@
+framework module RCTMaxLeapPay {
+  umbrella header "RCTMaxLeapPay.h"
+
+  export *
+  module * { export * }
+}

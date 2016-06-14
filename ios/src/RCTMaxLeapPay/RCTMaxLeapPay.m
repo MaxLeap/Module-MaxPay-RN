@@ -25,7 +25,7 @@ RCT_EXPORT_MODULE()
 - (void)handleOpenUrl:(NSNotification *)notification {
     NSURL *url = [NSURL URLWithString:notification.userInfo[@"url"]];
     [MaxLeapPay handleOpenUrl:url completion:^(MLPayResult * _Nonnull result) {
-        
+
     }];
 }
 
@@ -77,7 +77,7 @@ RCT_EXPORT_METHOD(startPayment:(NSDictionary *)payment
 }
 
 // params: {channel: channelStr, billNum: billNo}, channel 可选
-RCT_EXPORT_METHOD(findOrder:(NSDictionary *)params
+RCT_EXPORT_METHOD(findRecords:(NSDictionary *)params
                   resolver:(RCTPromiseResolveBlock)resolve
                   rejecter:(RCTPromiseRejectBlock)reject)
 {

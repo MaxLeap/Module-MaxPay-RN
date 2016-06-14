@@ -16,7 +16,13 @@
 
 3. 打开 Finder，找到本项目的根目录，使用 Xcode 打开 iOS 工程（双击 .xcodeproj 文件即可），然后导航到 `/node_modules/maxpay-react-native/ios/lib` 目录，把该目录下的 frameworks 都拖到 Xcode 工程中
 
-4. 此外，使用个平台进行支付还需要配置 Xcode 项目，请参阅支付文档的[`手动安装`第4步以后的部分](https://maxleap.cn/s/web/zh_cn/guide/devguide/ios.html#移动支付)
+4. 添加 Framework Search Paths
+
+	在 Xcode 中，导航到 Targets -> YourAppName -> "Build Settings"，找到 “Framework Search Paths” 一项，添加下面这个路径：
+	
+	`$(SRCROOT)/../node_modules/maxpay-react-native/ios/lib`
+
+5. 此外，使用个平台进行支付还需要配置 Xcode 项目，请参阅支付文档的[`手动安装`第4步以后的部分](https://maxleap.cn/s/web/zh_cn/guide/devguide/ios.html#移动支付)
 
 ### 集成 Android 环境
 
